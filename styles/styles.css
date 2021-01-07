@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: "IBM Plex Sans", sans-serif;
+  color: #060a24;
+}
+
+.header {
+  padding: 0 1rem;
+  width: 100vw;
+  max-width: 1200px;
+  font-family: "IBM Plex Mono", monospace;
+  height: 2.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+}
+.logo {
+  height: 1.5rem;
+}
+.menu-nav {
+  font-size: 1rem;
+}
+.menu-nav__list {
+  list-style-type: none;
+  position: absolute;
+  background-color: #0000ec;
+  display: inline-block;
+  top: 2.75rem;
+  left: 100vw;
+  width: 100vw;
+  transition-property: left, width;
+  transition-duration: 300ms;
+}
+
+.menu-nav__mobile-check {
+  display: none;
+}
+.menu-nav__mobile-icon-bar {
+  display: block;
+  transition: font-size 200ms;
+}
+.menu-nav__mobile-icon-close {
+  display: block;
+  font-size: 0%;
+  transition: font-size 200ms;
+}
+.menu-nav__mobile-check:checked ~ .menu-nav__list {
+  display: block;
+  left: 0;
+  top: 2.75rem;
+  width: 100vw;
+}
+
+.menu-nav__mobile-check:checked
+  ~ .menu-nav__mobile-menu
+  .menu-nav__mobile-icon-bar {
+  font-size: 0%;
+}
+
+.menu-nav__mobile-check:checked
+  ~ .menu-nav__mobile-menu
+  .menu-nav__mobile-icon-close {
+  font-size: 100%;
+}
+
+.menu-nav__item {
+  height: 2.5rem;
+}
+.menu-nav__link {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  width: 100%;
+  height: 100%;
+}
+
+.button {
+  display: block;
+  background-color: #00f3bb;
+  font-family: "IBM Plex Mono-Medium", monospace;
+  font-size: 1.125rem;
+  border: none;
+  height: 3rem;
+  min-width: 18rem;
+  line-height: 1.375rem;
+  width: 90%;
+}
+.button__align-center-mobile {
+  margin: auto;
+}
+.button:hover {
+  background-image: linear-gradient(225deg, #0000fe 0%, #00f0b8 100%);
+}
+.main {
+  position: relative;
+  top: 2.75rem;
+}
+.main__tittle {
+  display: block;
+  font-size: 2.25rem;
+  margin: 1rem 0;
+}
+.main__first-line {
+  display: block;
+}
+.main__word-lined {
+  text-decoration: line-through;
+}
+
+@media screen and (min-width: 600px) {
+  .header {
+    display: flex;
+    height: 5rem;
+    padding: 0 3rem;
+  }
+  .button {
+    width: 14.125rem;
+  }
+  .button__align-center-mobile {
+    margin: 0%;
+  }
+  .logo {
+    height: 3rem;
+  }
+  .menu-nav {
+    width: 80%;
+  }
+  .menu-nav__list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: static;
+    background-color: transparent;
+  }
+  .menu-nav__mobile-icon-bar {
+    display: none;
+  }
+  .menu-nav__item {
+    height: 100%;
+  }
+  .menu-nav__link {
+    color: #060a24;
+    font-size: 1rem;
+    padding: 0%;
+  }
+  .menu-nav__link:hover {
+    text-decoration: line-through;
+    color: #00f3bb;
+  }
+  .menu-nav__link:active {
+    color: rgba(6, 10, 36, 0.56);
+  }
+
+  .main {
+    position: relative;
+    top: 5rem;
+  }
+  .main__first-line {
+    display: inline;
+  }
+}
