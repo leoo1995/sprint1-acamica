@@ -1,21 +1,29 @@
+:root {
+  font-size: 16px;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 body {
-  padding: 0 1rem;
+  /* padding: 0 16px; */
   display: flex;
   align-items: center;
   flex-direction: column;
   font-family: "IBM Plex Sans", sans-serif;
   color: #060a24;
+  /* width: 100vw; */
+  /* overflow-x: hidden; */
 }
-
+.container {
+  margin: 0 16px;
+}
 .header {
-  padding: 0 1rem;
+  background-color: #fff;
+  padding: 0 16px;
   width: 100vw;
-  max-width: 1200px;
+  /* max-width: 1200px; */
   font-family: "IBM Plex Mono", monospace;
   height: 2.75rem;
   display: flex;
@@ -35,10 +43,10 @@ body {
   position: absolute;
   background-color: #0000ec;
   display: inline-block;
-  top: 2.75rem;
-  left: 100vw;
+  top: -500%;
+  left: 0vw;
   width: 100vw;
-  transition-property: left, width;
+  transition-property: top, left, width;
   transition-duration: 300ms;
 }
 
@@ -81,7 +89,7 @@ body {
   text-decoration: none;
   display: flex;
   align-items: center;
-  padding-left: 1rem;
+  padding-left: 16px;
   width: 100%;
   height: 100%;
 }
@@ -89,13 +97,15 @@ body {
 .button {
   display: block;
   background-color: #00f3bb;
-  font-family: "IBM Plex Mono-Medium", monospace;
+  font-family: "IBM Plex Mono", monospace;
   font-size: 1.125rem;
   border: none;
   height: 3rem;
   min-width: 18rem;
   line-height: 1.375rem;
   width: 90%;
+  text-decoration: none;
+  color: #060a24;
 }
 .button__align-center-mobile {
   margin: auto;
@@ -106,11 +116,12 @@ body {
 .main {
   position: relative;
   top: 2.75rem;
+  /* width: 100%; */
 }
 .main__tittle {
   display: block;
   font-size: 2.25rem;
-  margin: 1rem 0;
+  margin: 16px 0;
 }
 .main__first-line {
   display: block;
@@ -118,12 +129,66 @@ body {
 .main__word-lined {
   text-decoration: line-through;
 }
+.main__paragraph {
+  margin-bottom: 2.25rem;
+}
+.episodes {
+  position: relative;
+  width: 100%;
 
+  margin-top: 1.5rem;
+}
+.bg-non-rectangular {
+  background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
+  clip-path: polygon(
+    0px 32px,
+    calc(100% + 32px) 0px,
+    calc(100% + 32px) calc(100% - 32px),
+    0px 100%
+  );
+  position: absolute;
+  top: -64px;
+  left: -16px;
+  right: -16px;
+
+  /* width: 100vw; */
+  height: calc(100% + 128px);
+  z-index: -1;
+}
+.episodes__content {
+  width: 100%;
+  /* display: flex;
+  flex-direction: column; */
+  /* background-color: #0ff; */
+}
+.episodes__title {
+  margin-top: 88px;
+
+  font-size: 2.25rem;
+  color: white;
+}
+.podcast {
+  margin-top: 0.69rem;
+  width: 100%;
+  /* height: 225px; */
+  /* background-color: aliceblue; */
+  border: none;
+  overflow: hidden;
+  /* display: flex; */
+  /* margin: 0px; */
+
+  /* frameborder="0"
+            allowtransparency="true"
+            allow="encrypted-media" */
+}
 @media screen and (min-width: 600px) {
   .header {
+    box-sizing: content-box;
+    max-width: 1200px;
     display: flex;
     height: 5rem;
     padding: 0 3rem;
+    width: 100vw;
   }
   .button {
     width: 14.125rem;

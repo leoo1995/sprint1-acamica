@@ -14,6 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
@@ -45,16 +46,43 @@
     </header>
     <main class="main container">
       <span class="main__tittle">
-        <span class="main__first-line"
-          >Hello <span class="main__word-lined">world</span> </span
+        <span class="main__first-line">
+          Hello <span class="main__word-lined">world</span> </span
         >pale blue dot<span>.</span>
       </span>
-      <p>
+      <p class="main__paragraph">
         Un podcast que explora el mundo de la programación. Nuevos episodios,
         todos los jueves cada 15 días.
       </p>
       <button class="button button__align-center-mobile">CONOCÉ MAS</button>
+      <section class="episodes" id="episodes">
+        <div class="bg-non-rectangular"></div>
+        <h2 class="episodes__title">Episodios</h2>
+        <div class="episodes__content">
+          <iframe
+            class="podcast"
+            src="https://open.spotify.com/embed-podcast/episode/6eCHJ8yOYtksW8OT93Dbdu"
+            scrolling="No"
+          ></iframe>
+          <iframe
+            class="podcast"
+            src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt"
+            scrolling="No"
+          ></iframe>
+          <iframe
+            class="podcast"
+            src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD"
+            scrolling="No"
+          ></iframe>
+          <iframe
+            class="podcast"
+            src="https://open.spotify.com/embed-podcast/show/2Iibd5A6R7mxkCm4NwNmUn"
+            scrolling="No"
+          ></iframe>
+        </div>
+      </section>
     </main>
+
     <footer></footer>
   </body>
 </html>
