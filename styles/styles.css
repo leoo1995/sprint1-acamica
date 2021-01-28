@@ -43,11 +43,12 @@ body {
   position: absolute;
   background-color: #0000ec;
   display: inline-block;
-  top: -500%;
-  left: 0vw;
+  top: 2.75rem;
+  left: 100vw;
   width: 100vw;
   transition-property: top, left, width;
   transition-duration: 300ms;
+  z-index: -1;
 }
 
 .menu-nav__mobile-check {
@@ -135,8 +136,9 @@ body {
 .episodes {
   position: relative;
   width: 100%;
-
+  /* height: 200%; */
   margin-top: 1.5rem;
+  overflow-y: visible;
 }
 .bg-non-rectangular {
   background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
@@ -144,18 +146,19 @@ body {
     0px 32px,
     calc(100% + 32px) 0px,
     calc(100% + 32px) calc(100% - 32px),
-    0px 100%
+    0px calc(100%)
   );
   position: absolute;
   top: -64px;
   left: -16px;
   right: -16px;
-
+  /* height: 200%; */
   /* width: 100vw; */
   height: calc(100% + 128px);
   z-index: -1;
 }
 .episodes__content {
+  /* height: 100%; */
   width: 100%;
   /* display: flex;
   flex-direction: column; */
@@ -180,6 +183,46 @@ body {
   /* frameborder="0"
             allowtransparency="true"
             allow="encrypted-media" */
+}
+.us {
+  width: 100%;
+  position: relative;
+  margin-top: 48px;
+  /* overflow-x: hidden; */
+}
+.phone {
+  /* position: absolute; */
+  height: 519px;
+  width: 100%;
+}
+.us__tittle {
+  font-size: 2.25rem;
+  letter-spacing: 0;
+  line-height: 42px;
+  margin-top: 27px;
+}
+.us__about {
+  margin-top: 8px;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.875rem;
+  letter-spacing: 0;
+  line-height: 22px;
+}
+.invited {
+  display: flex;
+  flex-flow: row wrap;
+
+  position: relative;
+  left: -1rem;
+  /* right: -1rem; */
+  /* left: -1rem; */
+  width: 100vw;
+}
+.invited__photo {
+  flex: 1 1 100px;
+  position: relative;
+  /* left: -1rem; */
+  width: 100%;
 }
 @media screen and (min-width: 600px) {
   .header {
