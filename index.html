@@ -30,16 +30,16 @@
 
         <ul class="menu-nav__list">
           <li class="menu-nav__item">
-            <a class="menu-nav__link" href="#">EPISODIOS</a>
+            <a class="menu-nav__link" href="#episodes">EPISODIOS</a>
           </li>
           <li class="menu-nav__item">
-            <a class="menu-nav__link" href="#">NOSOTROS</a>
+            <a class="menu-nav__link" href="#us">NOSOTROS</a>
           </li>
           <li class="menu-nav__item">
-            <a class="menu-nav__link" href="#">ENTREVISTAS</a>
+            <a class="menu-nav__link" href="#interviews">ENTREVISTAS</a>
           </li>
           <li class="menu-nav__item">
-            <a class="menu-nav__link" href="#">TÓPICOS</a>
+            <a class="menu-nav__link" href="#topics">TÓPICOS</a>
           </li>
         </ul>
       </nav>
@@ -81,7 +81,7 @@
           ></iframe>
         </div>
       </section>
-      <section class="us">
+      <section class="us" id="us">
         <img src="images/phone.png" class="phone" alt="phone" />
         <h2 class="us__tittle">De dónde venimos</h2>
         <p class="us__about">
@@ -93,28 +93,81 @@
           ourselves.
         </p>
       </section>
-      <section class="invited">
-        <img
-          src="images/grace-hopper.png"
-          alt="grace-hopper"
-          class="invited__photo"
-        />
-        <img src="images/Katie-Bouman.png" alt="" class="invited__photo" />
-        <img src="images/Margaret_Hamilton.png" alt="" class="invited__photo" />
-        <img
-          src="images/An E.R.A.Univac 1103 computer in the 1950s.png"
-          alt=""
-          class="invited__photo"
-        />
-        <img
-          src="images/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png"
-          alt=""
-          class="invited__photo"
-        />
-        <img src="images/susan-kare.png" alt="" class="invited__photo" />
+      <section class="invited" id="interviews">
+        <h2 class="invited__tittle">Invitadas/os estelares</h2>
+        <div class="invited__photos-content">
+          <img
+            src="images/grace-hopper.png"
+            alt="grace-hopper"
+            class="invited__photo"
+          />
+          <img src="images/Katie-Bouman.png" alt="" class="invited__photo" />
+          <img
+            src="images/Margaret_Hamilton.png"
+            alt=""
+            class="invited__photo"
+          />
+          <img
+            src="images/An E.R.A.Univac 1103 computer in the 1950s.png"
+            alt=""
+            class="invited__photo"
+          />
+          <img
+            src="images/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png"
+            alt=""
+            class="invited__photo"
+          />
+          <img src="images/susan-kare.png" alt="" class="invited__photo" />
+        </div>
+      </section>
+      <section class="topics" id="topics">
+        <h2 class="topics__tittle">Algunos de nuestros temas</h2>
+        <div class="topics__content">
+          <div class="topic">
+            <img src="images/icon1.svg" alt="" class="topic__img" />
+            <h3 class="topic__name">Trabajo remoto</h3>
+          </div>
+          <div class="topic">
+            <img src="images/icon2.svg" alt="" class="topic__img" />
+            <h3 class="topic__name">Repensando la programación</h3>
+          </div>
+          <div class="topic">
+            <img src="images/icon3.svg" alt="" class="topic__img" />
+            <h3 class="topic__name">Bases del código</h3>
+          </div>
+          <div class="topic">
+            <img src="images/icon4.svg" alt="" class="topic__img" />
+            <h3 class="topic__name">Seguridad informática</h3>
+          </div>
+        </div>
+      </section>
+      <section class="novelties">
+        <h2 class="novelties__tittle">¿Querés las últimas novedades?</h2>
+        <button class="button button__align-center-mobile">
+          ESCUCHÁ LOS EPISODIOS
+        </button>
       </section>
     </main>
 
-    <footer></footer>
+    <footer class="footer">
+      <span class="footer__copy-right">© 2019— Hello blue pale dot</span>
+      <div class="footer__social-networks">
+        <a href="https://www.spotify.com" class="footer__icon"
+          ><i class="fab fa-spotify"></i
+        ></a>
+        <a href="https://www.instagram.com" class="footer__icon"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="https://www.twitter.com" class="footer__icon"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a href="https://www.facebook.com" class="footer__icon"
+          ><i class="fab fa-facebook"></i
+        ></a>
+        <a href="https://www.telegram.com" class="footer__icon"
+          ><i class="fab fa-telegram"></i
+        ></a>
+      </div>
+    </footer>
   </body>
 </html>
