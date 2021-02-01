@@ -16,9 +16,7 @@ body {
   /* width: 100vw; */
   /* overflow-x: hidden; */
 }
-.container {
-  /* margin: 0 16px; */
-}
+
 .header {
   background-color: #fff;
   padding: 0 16px;
@@ -132,6 +130,10 @@ body {
 }
 .main__paragraph {
   margin-bottom: 2.25rem;
+  font-family: "IBM Plex Mono", monospace;
+  letter-spacing: 0;
+  line-height: 22px;
+  font-size: 0.875rem;
 }
 .episodes {
   position: relative;
